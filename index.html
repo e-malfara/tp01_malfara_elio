@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulaire d'inscription</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container-center bg-light p-3 m-3">
+        <form class="row" novalidate>
+            <div class="text-center bg-light mt-3">
+                <h1 class="text-secondary">Formulaire d'inscription</h1>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCivilite" class="form-label">Civilité</label>
+                <select class="form-select" id="validationCivilite" required>
+                    <option selected disabled value="0">Choisir...</option>
+                    <option>Monsieur</option>
+                    <option>Madame</option>
+                    <option>Autre</option>
+                </select>
+                <div id="validationCiviliteFeedback" class="text-danger">
+                    Veuillez choisir une civilité.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationNom" class="form-label">NOM</label>
+                <input type="text" class="form-control" id="validationNom" required>
+                <div id="validationNomFeedback" class="text-danger">
+                    Veuillez choisir un Nom valide.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationPrenom" class="form-label">Prénom</label>
+                <input type="text" class="form-control" id="validationPrenom" required>
+                <div id="validationPrenomFeedback" class="text-danger">
+                    Veuillez rentrer un prénom valide.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationEmail" class="form-label">E-mail</label>
+                <input type="text" class="form-control" id="validationEmail" required>
+                <div id="validationEmailFeedback" class="text-danger">
+                    Veuillez rentrer une adresse mail valide.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationTelephone" class="form-label">Téléphone</label>
+                <input type="text" class="form-control" id="validationTelephone" required>
+                <div id="validationTelephoneFeedback" class="text-danger">
+                    Veuillez rentrer un numéro valide.
+                </div>
+            </div>
+            <div class="col-md-12">
+                <label for="validationAdresse" class="form-label">Adresse</label>
+                <input type="text" class="form-control" id="validationAdresse" required>
+                <div id="validationAdresseFeedback" class="text-danger">
+                    Veuillez rentrer une adresse valide.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCodePostal" class="form-label">Code Postal</label>
+                <input type="text" class="form-control" id="validationCodePostal" required>
+                <div id="validationCodePostalFeedback" class="text-danger">
+                    Veuillez rentrer un code postal valide.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationVille" class="form-label">Ville</label>
+                <input type="text" class="form-control" id="validationVille" required>
+                <div id="validationVilleFeedback" class="text-danger">
+                    Veuillez rentrer une ville valide.
+                </div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <label for="validationLogin" class="form-label">Login</label>
+                <input type="text" class="form-control" id="validationLogin" required>
+                <div id="validationLoginFeedback" class="text-danger">
+                    Le login ne doit pas être vide.
+                </div>
+            </div>
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <label for="validationMdp1" class="form-label">Mot de passe</label>
+                <input type="password" class="form-control" id="validationMdp1" required>
+            </div>
+            <div class="col-md-6">
+                <label for="validationMdp2" class="form-label">Confirmation du mot de passe</label>
+                <input type="password" class="form-control" id="validationMdp2" required>
+                <div id="validationMdp2Feedback" class="text-danger">
+                    Le mot de passe de confirmation est vide ou n'est identique au mot de passe actuel.
+                </div>
+            </div>
+            <div class="col-12 mt-3">
+                <button class="btn btn-primary" type="submit">Soumettre</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
