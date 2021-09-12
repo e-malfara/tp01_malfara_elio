@@ -16,7 +16,7 @@ $(document).ready(function ()
     $("form").submit(function (e)
     {
         //Instanciation des valeurs des champs
-        let civil = $("#validationCivilite").selectedIndex();
+        let civil = $("#validationCivilite").val();
         let nom = $("#validationNom").val();
         let prenom = $("#validationPrenom").val();
         let email = $("#validationEmail").val();
